@@ -1,0 +1,84 @@
+/* HTML */
+html{
+    font-size: 16px;
+    font-family: "lato", sans-serif ;
+}
+/* Body */
+body{
+    margin: 0;
+}
+/* section à propos */
+.sectionApropos{
+    background-color: #f7f7f7;
+}
+.textCenter{
+    text-align: center;
+
+}
+.heading{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+     /* de gauche à droite dégradé */
+    background-image: linear-gradient(to right, #373737, #C0B283);
+   /* faire un dégradé uniquement sur le titre */
+    -webkit-background-clip: text;
+    color: transparent;
+    /*espace entre chaque caractéres*/
+    letter-spacing: 0.2rem;
+    transition: all .2s;
+}
+.heading:hover{
+    /* faire une distortion du titre sur les axes x et y et un zoom de 1.1 */
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2) ;
+}
+.headingText{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.margBotSm{
+    margin-bottom: 1.5rem;
+}
+.paragraphe{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+.btn-text{
+    font-style: 1.6rem;
+    color: #373737;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #C0B283;
+    padding: 3px;
+    transition: all .2s;
+}
+.btn-text:hover{
+    background-color: #373737;
+    color: #C0B283;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15) ;
+    transform: translateY(-2px);
+}
+.btn-text:active{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    transform: translateY(0);
+}
+/* info Rem => prends comme réference la taille de l'élement parent ici la font-size de html ou par défaut l'élement :root*/
+/* em => prends comme réference la taille de l'élement :root */
+/* :root => élément qui répresente la racine du document */
+
+/* positionnement flex */
+.row{
+
+}
+.row .doubleCol{
+
+}
+
+
+
+
+
+
