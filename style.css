@@ -27,7 +27,7 @@ body{
     color: transparent;
     /*espace entre chaque caractéres*/
     letter-spacing: 0.2rem;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 .heading:hover{
     /* faire une distortion du titre sur les axes x et y et un zoom de 1.1 */
@@ -53,7 +53,7 @@ body{
     text-decoration: none;
     border-bottom: 1px solid #C0B283;
     padding: 3px;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 .btn-text:hover{
     background-color: #373737;
@@ -77,8 +77,31 @@ body{
 
 }
 
-
-
-
-
+/* section images */
+.composition{
+    position: relative;
+    margin-top: 2.8rem;
+}
+.composition__photo{
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index:10;
+    transition: all 0.2s;
+    /* On décales la ligne de 2rem */
+    outline-offset: 2rem;
+}
+.composition__photo--p1{
+    left: 0;
+    top: -2rem;
+}
+.composition__photo--p2{
+    right: 0;
+    top:2rem;
+}
+.composition__photo--p3{
+    left: 20%;
+    top: 10rem;
+}
 
